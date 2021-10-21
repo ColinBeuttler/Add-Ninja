@@ -1,7 +1,10 @@
-const enteranceFee = confirm("Are you 18?");
-
-async function doubleConfirm() {
-  const confirmation = await enteranceFee();
+function FeePrompt() {
+  const confirmPrompt = window.confirm("Are you 18?");
+  return confirmPrompt;
 }
 
-export default enteranceFee;
+// async function doubleConfirm() {
+//   const confirmation = await enteranceFee();
+// }
+
+export default FeePrompt;
